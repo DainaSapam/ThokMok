@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Thok Mok</title>
+	<link rel="stylesheet" type="text/css" href="./bootstrap/js/bootstrap.min.js">
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/mountains.css">	
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#">Thok Mok</a>
+				<!-- Replace Thok Mok with thok mok image -->
+				<!--<a class="navbar-brand" href="#">
+        			<img alt="Thok Mok" src="...">
+      			</a> -->
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="#">About Thok Mok</a></li>
+					<li><a href="#">Contact Thok Mok</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thok Mok Dropdown <span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Thok Mok Action</a></li>
+								<li><a href="#">Thok Mok Another Action</a></li>
+								<li><a href="#">Thok Mok Doing something here</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Thok Mok Separated</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">Thok Mok Separated tongan tongan</a></li>
+							</ul>						
+					</li>
+				</ul>
+				<form class="navbar-form navbar-left">
+					<div class="form-group">
+						<input type="text" class="form-control" placeholder="Thok Mok">
+					</div>
+					<button type="button" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<h1 class="text-center">World Highest 5 mountains</h1>
+		<h3 class="text-center">Mountain files of the 5 tallest mountains on Earth</h3>
+		<hr>
+	</div>
+	<div class="container">	
+	 	<div class="page-header">
+        	<h1><em>5. Makalu - 8,485 meters</em></h1>
+      	</div>
+      	
+      	<img id="05" src="images/5.makalu.jpg" onclick="display(this)" alt="makalu" data-toggle="modal" data-target="#myModal"> <br>
+      	<h3 style="font-size: 18px; font-family: Georgia, serif">
+      	5th Highest Mountain in the World: Mt. Makalu <br>
+		Height: 8,485 metres <br>
+		Country: Nepal <br>
+		First Summit by: Lionel Terray and Jean Couzy
+      	</h3>
+
+      	<div class="page-header">
+        	<h1><em>4. Lhotse - 8,516 meters</em></h1>
+      	</div>
+      	
+      	<img id="04" onclick="display(this)" src="images/4.lhotse.jpg" alt="lhotse" data-toggle="modal" data-target="#myModal"/><br>
+      	<h3 style="font-size: 18px; font-family: Georgia, serif">
+      	4th Highest Mountain in the World: Mt. Lhotse <br>
+		Height: 8,516 metres <br>
+		Country: Nepal <br>
+		First Summit by: Ernst Reiss and Fritz Luchsinger	<br>
+      	</h3>
+
+      	<div class="page-header">
+        	<h1><em>3. Kanchenjunga - 8,546 meters</em></h1>
+      	</div>
+      	
+      	<img id="03" src="images/3kanchendzonga.jpg" onclick="display(this)" alt="kanchendzonga" data-toggle="modal" data-target="#myModal"><br>
+      	<h3 style="font-size: 18px; font-family: Georgia, serif">
+      	3rd Highest Mountain in the World: Mt. Kanchenjunga <br>
+		Height: 8,586 metres <br>
+		Country: Nepal <br>
+		First Summit by: Joe Brown and George Brand	<br>
+      	</h3>
+
+      	<div class="page-header">
+        	<h1><em>2. K2 - 8,611 meters</em></h1>
+      	</div>
+      	
+      	<img id="02" src="images/2k2.jpg" onclick="display(this)" alt="k2" data-toggle="modal" data-target="#myModal"><br>
+      	<h3 style="font-size: 18px; font-family: Georgia, serif">
+      	2nd Highest Mountain in the World: Mt. K2 <br>
+		Height: 8,611 metres <br>
+		Country: Pakistan <br>
+		First Summit by: Lino Lacedelli and Achille Compagnoni	<br>
+      	</h3>
+
+      	<div class="page-header">
+        	<h1><em>1. Everest - 8,848 meters</em></h1>
+      	</div>
+      	
+      	<img id="01" src="images/1everest.jpg" onclick="display(this)" alt="everest" data-toggle="modal" data-target="#myModal"><br>
+      	<h3 style="font-size: 18px; font-family: Georgia, serif">
+      	5th Highest Mountain in the World: Mt. Everest <br>
+		Height: 8,848 metres <br>
+		Country: Nepal <br>
+		First Summit by: Sir Edmund Hilary and Tenzing Norgay<br>
+      	</h3>
+
+    </div>
+    <!-- <div id="myModal" class="modal">
+      		<span class="close">&times;</span>
+      		<img class="modal-content" id="img01">
+      		<div id="caption"></div>
+    	</div> -->
+	
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog">
+			<!--- Modal -->
+			<div class="modal-content">
+				<div class="modal-body text-center" style="background: black;">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<p>Some text here</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	 <footer class="footer">
+      <div class="container">
+        <p class="text-muted text-center">Copyright © 2017 Thok Mok.</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="javascript/script.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
