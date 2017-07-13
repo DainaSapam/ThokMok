@@ -23,7 +23,7 @@ var caption = {
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
 var img = document.getElementById('01');
-console.log("Id of the image" +img.ELEMENT_NODE);
+console.log("Id of the image " +img.ELEMENT_NODE);
 var modalImg = document.getElementById("img01");
 var captionText = document.getElementById("caption");
 
